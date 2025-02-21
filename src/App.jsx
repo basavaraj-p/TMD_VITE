@@ -7,8 +7,8 @@ import { Client, Provider, defaultExchanges, subscriptionExchange } from "urql";
 import { SubscriptionClient } from "subscriptions-transport-ws";
 import "./App.css";
 
-const HTTPServerURL = "http://localhost:5070/graphql";
-const WSServerURL = "ws://localhost:5070/graphql";
+const HTTPServerURL = "https://graphileservertmd.onrender.com/graphql";
+const WSServerURL = "https://graphileservertmd.onrender.com/graphql";
 
 const subscriptionClient = new SubscriptionClient(WSServerURL, {
   reconnect: true,
