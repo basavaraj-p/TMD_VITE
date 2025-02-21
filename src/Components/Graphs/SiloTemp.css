@@ -1,0 +1,116 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #628281; */
+    background-color: #EEEFE1;
+    width: 250px;
+    /* height: 120px; */
+    height: 50px;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.card__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    /* background-color: mediumorchid; */
+}
+
+.item__value {
+    font-size: 30px;
+    font-weight: 200;
+    /* color: #DDDDDD; */
+    color: #5A5B5C;
+
+}
+
+.item__unit {
+    font-size: 16px;
+    padding-left: 1px;
+    font-style: oblique;
+    /* color: #DDDDDD; */
+    color: #5A5B5C;
+}
+
+.title {
+    font-size: 18px;
+    /* color: #DDDDDD; */
+    color: #5A5B5C;
+}
+
+
+.trans:hover .icon {
+    color: #5A5B5C;
+}
+
+.trans {
+    transition: transform 300ms, box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.trans:hover {
+    box-shadow: 0 0 80px 80px #DFE0DF inset;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.icon {
+    width: auto;
+    /* color: #DDDDDD; */
+    color: #A0A2AF;
+}
+
+.temp__header {
+    width: 90%;
+    /* cursor: pointer; */
+    height: 50px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -20px;
+    left: 4%;
+    border-radius: 3px;
+    background-color: #4AA64E;
+    color: white;
+    /* box-shadow: 0 3px 2px 2px #f8f7f7; */
+}
+
+.temp__value {
+    align-items: center;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.temp {
+    width: 285px;
+    /* cursor: pointer; */
+    height: 40px;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 8px;
+}
+
+.temp__container {
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 2px #EEEFE1;
+    width: 295px;
+    /* background-color: #eeeeee; */
+    background-color: #F3FDE8;
+}
+
+.temp__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -12px;
+}

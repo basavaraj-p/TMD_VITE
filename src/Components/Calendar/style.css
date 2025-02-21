@@ -1,0 +1,19 @@
+/* Increase specificity by using multiple classes and add border-width for thickness */
+
+.rbc-calendar .rbc-row-bg {
+    border-top-color: red !important;
+    border-top-width: 2px !important;
+    /* Adjust the value for desired thickness */
+}
+
+.rbc-calendar .rbc-month-row {
+    border-left-color: red !important;
+    border-left-width: 2px !important;
+    /* Adjust the value for desired thickness */
+}
+
+.rbc-calendar .rbc-day-bg {
+    border-right-color: red !important;
+    border-right-width: 2px !important;
+    /* Adjust the value for desired thickness */
+}

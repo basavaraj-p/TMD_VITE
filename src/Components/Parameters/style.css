@@ -1,0 +1,14 @@
+.MuiInputBase-input::placeholder {
+    color: black;
+    /* Change to your desired color */
+    opacity: 1;
+    /* Adjust opacity value as desired, 1 is fully opaque */
+}
+
+/* For focused state */
+.MuiInputBase-input:focus::placeholder {
+    color: black;
+    /* Change to your desired color for focused state */
+    opacity: 1;
+    /* Adjust opacity value as desired, 1 is fully opaque */
+}

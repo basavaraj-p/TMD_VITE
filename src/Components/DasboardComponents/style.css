@@ -1,0 +1,12 @@
+/* Add this CSS to your component's CSS file or style block */
+.hover-effect {
+    transition: transform 0.2s;
+    /* Add a smooth transition effect */
+}
+
+.hover-effect:hover {
+    transform: translate(0, -5px);
+    /* Move the div 5px above when hovered */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Add a shadow for elevation */
+}
