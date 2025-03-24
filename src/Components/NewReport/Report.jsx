@@ -127,7 +127,7 @@ const Report = ({ id, reportTemp, reportHum }) => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5090/probe-history?startDate=${moment(
+          `https://tmd-report-rest.onrender.com/probe-history?startDate=${moment(
             selectedDate
           ).format("YYYY-MM-DD")}&endDate=${nextDay}`
         );

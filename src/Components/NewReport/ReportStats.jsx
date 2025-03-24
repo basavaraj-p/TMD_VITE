@@ -32,7 +32,7 @@ const ReportStats = ({
     const fetchData1 = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5090/probe-history-id?startDate=${moment(
+          `https://tmd-report-rest.onrender.com/probe-history-id?startDate=${moment(
             selectedDate
           ).format("YYYY-MM-DD")}&endDate=${nextDay}&id=${id}`
         );
@@ -53,7 +53,7 @@ const ReportStats = ({
     const fetchData2 = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5090/humidity-history-id?startDate=${moment(
+          `https://tmd-report-rest.onrender.com/humidity-history-id?startDate=${moment(
             selectedDate
           ).format("YYYY-MM-DD")}&endDate=${nextDay}&id=${id}`
         );
@@ -163,7 +163,8 @@ const ReportStats = ({
   useEffect(() => {
     if (allProbes.length !== 0 && time !== undefined) {
       setFiltteredProbes(filterByTime(allProbes, time));
-      setFiltteredHumidity(filterByTime(humidity, time));
+      setFiltteredHumidity(reportHum);
+      // setFiltteredHumidity(filterByTime(humidity, time));
       setAverageProbeValues(calculateAveragesForTemp(allProbes));
       setAverageHumidityValues(calculateAveragesForHum(humidity));
     }

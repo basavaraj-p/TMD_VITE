@@ -182,7 +182,7 @@ const SiloBriefing = () => {
       {OpenAlarmsDialog()}
       {OpenAlertsDialog()}
       {OpenFaultsDialog()}
-      <Navbar page={`Silo ${id} Details`} project="VIJAYANAGAR BIOTEH" />
+      <Navbar page={`Silo ${id} Details`} project="SENSEOPS" />
       <Weatherstation
         id={siloId}
         // id={id}

@@ -42,7 +42,7 @@ const DateSelectionCard = ({
       const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
       pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
       pdf.save(
-        `${"VIJAYANAGAR BIOTEH"} Silo ${id} Report on ${moment(selectedDate).format(
+        `${"SENSEOPS"} Silo ${id} Report on ${moment(selectedDate).format(
           "YYYY-MM-DD"
         )} at ${time}.pdf`
       );

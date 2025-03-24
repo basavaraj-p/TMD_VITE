@@ -27,7 +27,7 @@ const Dashboard = () => {
 
   return (
     <div>
-      <Navbar page="Silo Overview" project="VIJAYANAGAR BIOTEH" />
+      <Navbar page="Silo Overview" project="SENSEOPS" />
       <Weatherstation notshow="notshow" />
       <Layout />
       <Snackbar

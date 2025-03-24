@@ -118,7 +118,7 @@ const Loginpage = () => {
           }}
           // alignContent="center"
           textAlign={"center"}>
-          VIJAYANAGAR BIOTEH
+          SENSEOPS
         </Typography>
 
         <TextField
