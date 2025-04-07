@@ -8,7 +8,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import SnackbarContent from "@mui/material/SnackbarContent";
 // import { useContext } from 'react';
 import { GlobalContext } from "../Context/context";
-import Layout from "../Components/DasboardComponents/layout";
+import Layout from "../Components/DasboardComponents/Layout";
 import Footer from "../Components/Footer/Footer";
 import Weatherstation from "../Components/Weatherstation/Weatherstation";
 
