@@ -33,7 +33,7 @@ const Faults = ({ id }) => {
   // console.log(typeof id);
   const siloId = Number(id);
   const [alarams, setAlarams] = useState();
-  console.log("alarams11: ", alarams);
+  // console.log("alarams11: ", alarams);
 
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);

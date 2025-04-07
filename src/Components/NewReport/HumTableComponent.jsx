@@ -4,7 +4,7 @@ import humidityData from "./test2";
 import { Box } from "@mui/material";
 
 const HumTableComponent = ({ filtteredHumidity, testValue }) => {
-  console.log("testValue : ", testValue);
+  // console.log("testValue : ", testValue);
   const formatData = (data) => {
     const formattedData = {
       // Sensor: ["Sensor"],

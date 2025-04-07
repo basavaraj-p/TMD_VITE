@@ -55,7 +55,7 @@ const Report = ({ id, reportTemp, reportHum }) => {
   const [dateArray, setDateArray] = useState("");
   // console.log("dateArray : ", dateArray);
   const [time, setTime] = useState();
-  console.log("time : ", time);
+  // console.log("time : ", time);
   const [status, setStatus] = useState(false);
   // console.log("status : ", status);
 
@@ -135,7 +135,7 @@ const Report = ({ id, reportTemp, reportHum }) => {
           throw new Error(`Error: ${response.statusText}`);
         }
         const result = await response.json();
-        console.log("result : ", result);
+        // console.log("result : ", result);
         let uniqueDates = Array.from(
           new Set(result.map((item) => moment(item.updatetime).format("HH:mm")))
         );

@@ -29,7 +29,7 @@ const AllHumidityvalues = `subscription($id:Int!) {
 const HumidityStats = ({ id }) => {
   // let HHeader = ["Probes","S2","S3","S4","S5","S6","S7","S8","S9","S10"]
   const [humidity, setHumidity] = useState();
-  console.log("humidity : ",humidity);
+  // console.log("humidity : ",humidity);
 //   console.log("id : ",id);
     const matches = useMediaQuery("(max-width:600px)");
 

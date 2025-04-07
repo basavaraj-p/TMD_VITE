@@ -217,8 +217,8 @@ const TemperatureSettings = ({ id }) => {
   };
 
   const handleDelete = async (id, timeDetails) => {
-    console.log("silo_id : ", timeDetails?.silo_id);
-    console.log("time : ", timeDetails?.time);
+    // console.log("silo_id : ", timeDetails?.silo_id);
+    // console.log("time : ", timeDetails?.time);
     try {
       // Make a POST request to add a new time to the database
       const response = await axios.put(

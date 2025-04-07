@@ -16,9 +16,9 @@ const ReportStats = ({
   reportHum,
 }) => {
   const [humidity, setHumidity] = useState([]);
-  console.log("humidity : ", humidity);
+  // console.log("humidity : ", humidity);
   const [allProbes, setAllProbes] = useState([]);
-  console.log("allProbes: ", allProbes);
+  // console.log("allProbes: ", allProbes);
   const [filtteredProbes, setFiltteredProbes] = useState([]);
   const [filtteredHumidity, setFiltteredHumidity] = useState([]);
   // console.log("filtteredProbes : ", filtteredProbes);
@@ -88,10 +88,10 @@ const ReportStats = ({
       );
     });
   }
-  console.log(
-    "DATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-    filterByTime(allProbes, time)
-  );
+  // console.log(
+  //   "DATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  //   filterByTime(allProbes, time)
+  // );
 
   function calculateAveragesForHum(data) {
     const sensorData = data.reduce(
@@ -158,7 +158,7 @@ const ReportStats = ({
   };
 
   const isWithinTenMinutesResult = isWithinTenMinutes(time);
-  console.log("isWithinTenMinutesResult : ", isWithinTenMinutesResult);
+  // console.log("isWithinTenMinutesResult : ", isWithinTenMinutesResult);
 
   useEffect(() => {
     if (allProbes.length !== 0 && time !== undefined) {

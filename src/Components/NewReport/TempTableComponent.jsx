@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 import probeData from "./test";
 
 const TempTableComponent = ({ filtteredProbes, testValue }) => {
-  console.log("testValue : ", testValue);
+  // console.log("testValue : ", testValue);
   const organizeData = (probeData) => {
     const sensors = new Set();
     const probes = new Set();

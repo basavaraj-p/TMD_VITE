@@ -45,7 +45,7 @@ const CONVEYOR_DATA = `query MyQuery($silo:Int!) {
 export default function SiloConveyorDataGraph({ silo }) {
   // console.log("silo000000000000000000 : ", silo);
   const [conveyorData, setConveyorData] = React.useState([]);
-  console.log("conveyorData : ", conveyorData);
+  // console.log("conveyorData : ", conveyorData);
   const [allConveyorData, rexAllConveyorData] = useQuery({
     query: CONVEYOR_DATA,
     variables: { silo },

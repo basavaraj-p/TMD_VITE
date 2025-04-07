@@ -121,13 +121,13 @@ const Report = ({ id }) => {
 
   //new useState() by basavaraj
   const [selectedDate, setSelectedDate] = useState();
-  console.log("selectedDate : ", selectedDate);
+  // console.log("selectedDate : ", selectedDate);
   const nextDay = moment(selectedDate).add(1, "days").format("YYYY-MM-DD");
-  console.log("nextDayValue : ", nextDay);
+  // console.log("nextDayValue : ", nextDay);
   const [latestDate, setLatestDate] = useState();
-  console.log("latestDate : ", latestDate);
+  // console.log("latestDate : ", latestDate);
   const [maxDate, setMaxDate] = useState();
-  console.log("maxDate : ", maxDate);
+  // console.log("maxDate : ", maxDate);
 
   //dateArray is used to get all the updatetimes from the database
   const [dateArray, setDateArray] = useState("");

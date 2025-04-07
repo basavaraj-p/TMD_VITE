@@ -237,7 +237,7 @@ const ReportStats = ({ id, formState, dateArray, showDateArray }) => {
   // end of temperature table map code
   // console.log("formState.time : ",formState)
   // console.log("checkDatas : ",checkDatas)
-  console.log("NewSiloDetails : ", NewSiloDetails);
+  // console.log("NewSiloDetails : ", NewSiloDetails);
 
   const CDArray = [...new Set(checkDatas)];
   // console.log("CDArray : ",CDArray)
@@ -338,7 +338,7 @@ const ReportStats = ({ id, formState, dateArray, showDateArray }) => {
       tempDatas: tempDatas,
     };
   });
-  console.log("HumidityValues", HumidityValues);
+  // console.log("HumidityValues", HumidityValues);
   // end of humidity table map code
 
   const HArray = [...new Set(checkHumidityDatas)];

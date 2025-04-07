@@ -20,8 +20,8 @@ const fanHistoryQuery = `subscription MySubscription {
 
 const FanStats = ({ id }) => {
   const [fanHistory, setFanHistory] = useState([]);
-  console.log("fanHistory : ", fanHistory);
-  console.log("id : ", id);
+  // console.log("fanHistory : ", fanHistory);
+  // console.log("id : ", id);
 
   const [allfanHistoryResult, allfanHistoryAgain] = useSubscription({
     query: fanHistoryQuery,
@@ -42,16 +42,16 @@ const FanStats = ({ id }) => {
   }, [dataSubscription]);
 
   const relayId1 = id === 1 ? 50 : 52;
-  console.log("relayId1 : ", relayId1);
+  // console.log("relayId1 : ", relayId1);
 
   const relayId2 = id === 1 ? 51 : 53;
-  console.log("relayId2 : ", relayId2);
+  // console.log("relayId2 : ", relayId2);
 
   const filteredFanHistory = fanHistory
     .filter((item) => item.relayId === relayId1 || item.relayId === relayId2)
     .sort((a, b) => new Date(a.time) - new Date(b.time));
 
-  console.log("filteredFanHistory : ", filteredFanHistory);
+  // console.log("filteredFanHistory : ", filteredFanHistory);
 
   return (
     <div>

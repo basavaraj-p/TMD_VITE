@@ -39,9 +39,9 @@ const LineChart = ({ siloDetails, id }) => {
   const matches = useMediaQuery("(max-width:600px)");
   const desktopWidth = useMediaQuery("(max-width:1300px)");
 
-    console.log("allHistoryProbes: ", allHistoryProbes);
-    console.log("probrSelection: ", probrSelection);
-    console.log("dropdownItem: ", dropdownItem);
+    // console.log("allHistoryProbes: ", allHistoryProbes);
+    // console.log("probrSelection: ", probrSelection);
+    // console.log("dropdownItem: ", dropdownItem);
 
   useEffect(() => {
     refresh();
